@@ -15,18 +15,15 @@ menu()
 
 
 opcion = int(input("ingrese una opcion del menu (en numero): "))
-
+lectura_anterior = int(input("ingrese lectura periodo anterior: "))
+lectura_actual = int(input("ingrese lectura periodo actual: "))
+consumo = lectura_actual - lectura_anterior
 if opcion == 1:
     print("tarifa residencial")
-
-    lectura_anterior = int(input("ingrese lectura periodo anterior: "))
-    lectura_actual = int(input("ingrese lectura periodo anterior: "))
-
-    consumo = lectura_actual - lectura_anterior
+    
     precio_kw = 4.47
 
     cargos = {"cargo fijo" : 61.44 , "impuesto" : 1.21 , "Alum PB" : 950}
-    
 
     for i in cargos:
         subtotal = (cargos[i])
@@ -52,9 +49,7 @@ if opcion == 1:
 
 elif opcion == 2:
     print("tarifa comercial")
-    lectura_anterior = int(input("ingrese lectura periodo anterior: "))
-    lectura_actual = int(input("ingrese lectura periodo actual: "))
-    consumo = lectura_actual - lectura_anterior
+
     precio_kw = 7.54
 
     cargos = {"cargo fijo" :85.22 , "ing bruto" : 0.25 , "IVA" : 1.21 , "alum pb" : 1010}
