@@ -1,9 +1,14 @@
-print("hola")
+print('hola')
 
-edad = int(input("ingresa tu edad: "))
+print('vamos a conocer su edad')
 
-if edad > 18:
-   print("es mayor")
+nombre = input('diga su nombre: ')
+
+edad = int(input('diga su edad: '))
+
+if edad >= 18:
+	print(f'bienvenido {nombre} usted tiene {edad} años y es mayor')
+
+	
 else:
-   print("es menor")
-
+	print(f'{nombre} usted tiene {edad} años y es menor')
