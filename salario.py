@@ -1,28 +1,26 @@
-print("liquidacion de salario")
+#saludo
+print('horas trabajadas')
 
-nombre = input("ingrese nombre del empleado: ")
-apellido = input("ingrese apellido del empleado: ")
+#pide el nombre del empleado
+nombre=input('ingrese nombre del emplado: ')
 
-horasTrabajadas = int(input("ingrese cantidad de horas trabajadas por el empleado: "))
+#pide el valor hora
+valor_hora=float(input('ingrese valor hora: '))
 
-valorHora = 650
-
-premio = 5500
-
-def calcular(horasTrabajadas, valorHora, premio):
-    bruto = valorHora*horasTrabajadas
-
-    if horasTrabajadas > 250:
-        monto = bruto+premio
-
-        print(f"{nombre} {apellido} usted trabajo {horasTrabajadas} horas y su salario mensual es de {monto}")
-    
-    else:
-
-        print(f"{nombre} {apellido} usted trabajo {horasTrabajadas} horas y su salario mensual es de {bruto}")
-
-calcular(horasTrabajadas, valorHora, premio)
+#pide cantidad de horas trabajadas
+horas_trabajadas=int(input('ingrese cantidad de horas trabajadas: '))
 
 
+#calcula el monto
+monto=valor_hora*horas_trabajadas
 
 
+#decide si el empleado gana bien o mal
+if monto <0:
+	print(f'{nombre} esta en deficit')
+elif monto < 300000:
+	print(f'{nombre} gana poco')
+elif monto == 300000:
+	print(f'{nombre} gana bien')
+else:
+	print(f'{nombre} tiene un sueldo excelente')
