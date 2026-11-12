@@ -20,7 +20,7 @@ if opcion == 1:
     print("tarifa residencial")
 
     lectura_anterior = int(input("ingrese lectura periodo anterior: "))
-    lectura_actual = int(input("ingrese lectura periodo anterior: "))
+    lectura_actual = int(input("ingrese lectura periodo actual: "))
 
     consumo = lectura_actual - lectura_anterior
     precio_kw = 4.47
