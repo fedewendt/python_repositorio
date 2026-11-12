@@ -5,7 +5,7 @@ print('hola')
 nombre=input('ingresa tu nombre: ')
 
 #solicita que el usuario elija e ingrese una comida
-comida=input('que quieres comer? pixza o empanadas?').lower()
+comida=input('que quieres comer? pizza o empanadas?').lower()
 
 
 #decide que comida elijio el usuario 
