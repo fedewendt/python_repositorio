@@ -1,4 +1,4 @@
-#saludo
+#titulo
 print('horas trabajadas')
 
 #pide el nombre del empleado
